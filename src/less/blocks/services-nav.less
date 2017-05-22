@@ -1,0 +1,53 @@
+.services-nav {
+  display: block;
+  position: relative;
+  float: left;
+  width: 240px;
+  border-right: 0px solid #c3c3c3;
+  margin: 0px 0px 85px 0px;
+  &__menu {
+    list-style: none;
+    margin-top: 15px;
+    padding: 0px;
+    position: relative;
+  }
+  &__menu:after {
+    position: absolute;
+    width: 10px;
+    height: 272px;
+    left: 230px;
+    top: -40px;
+    background: url("../img/shadow.png") no-repeat center;
+    content: "";
+    z-index: 10;
+    margin-right: 0px;
+  }
+  &__item {
+    display: block;
+    padding-left: 20px;
+    background: #32425c;
+    border-bottom: 1px solid #293449;
+    border-top: 1px solid #405069;
+    width: 220px;
+    height: 61px;
+    line-height: 61px;
+    font-size: 21px;
+    font-weight: 700;
+    color: #ffffff;
+    z-index: -2;
+    text-decoration: none;
+  }
+  &__item:hover {
+    background-color: #293449;
+  }
+  &__item--current {
+    color: @secondary-color;
+    background: #ffffff;
+    border: none;
+  }
+  &__item--current:hover {
+    color: @secondary-color;
+    background: #ffffff;
+    border: none;
+  }
+}

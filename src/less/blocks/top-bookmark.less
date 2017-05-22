@@ -1,0 +1,26 @@
+.top-bookmark {
+  display: inline-block;
+  width: 150px;
+  outline: none;
+  min-height: 42px;
+  vertical-align: top;
+  position: relative;
+  font-size: 17px;
+  &__text {
+    color: white;
+    text-decoration: none;
+    padding-left: 40px;
+    line-height: 40px;
+  }
+  &:hover {
+    background: #212a3a;
+    color: #fff;
+  }
+  &:hover .icon--bookmark {
+    fill-opacity: 1;
+  }
+  &:active {
+    background: #161d29;
+    opacity: 0.6;
+  }
+}

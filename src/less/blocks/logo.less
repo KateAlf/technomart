@@ -1,0 +1,48 @@
+.logo {
+  display: inline-block;
+  background: @accent-color;
+  width: 220px;
+  min-height: 42px;
+  vertical-align: middle;
+  margin-right: 0;
+  position: relative;
+  &:after {
+    content: " ";
+    width: 220px;
+    height: 5px;
+    position: absolute;
+    bottom: -5px;
+    background-color: #b52933;
+  }
+  &:hover {
+    background: #ca2c37;
+  }
+  &:active {
+    background: #ba2732;
+  }
+  &__text {
+    display: block;
+    width: 220px;
+    min-height: 29px;
+    color: #fff;
+    font-weight: 600;
+    margin: 0;
+    padding-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    word-wrap: break-word;
+  }
+  &__text--header {
+    font-size: 24px;
+  }
+  &--footer {
+    border-top: 0;
+    height: 65px;
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+  &__text--footer {
+    font-size: 30px;
+  }
+}

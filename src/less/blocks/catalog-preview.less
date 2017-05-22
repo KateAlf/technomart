@@ -1,0 +1,132 @@
+.catalog-preview {
+  &__item {
+    position: relative;
+    width: 218px;
+    min-height: 318px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  &__item {
+    font-size: 16px;
+  }
+  &__item .flag {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    width: 60px;
+    height: 60px;
+    text-indent: -1000px;
+    overflow: hidden;
+    z-index: 20;
+  }
+  &__item .flag--new {
+    background: url("../img/new.png") no-repeat 0 0;
+  }
+  &__item .catalog-preview__actions {
+    display: none;
+  }
+  &__item:hover .catalog-preview__actions {
+    display: block;
+  }
+  &__item:hover {
+    box-shadow: 0 5px 15px 2px rgba(41, 52, 73, 0.5);
+  }
+  &__item .catalog-preview__actions {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 218px;
+    height: 80px;
+    padding: 40px 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 10;
+  }
+  &__item .catalog-preview__actions .catalog-preview__buy,
+  &__item .catalog-preview__actions .catalog-preview__bookmark {
+    display: block;
+    width: 129px;
+    margin: 0 auto;
+    margin-bottom: 7px;
+    padding: 7px 0;
+    border: 3px solid #63a63e;
+    border-bottom-color: #367315;
+    background-color: #63a63e;
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "Cuprum", sans-serif;
+    line-height: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 3px;
+  }
+  &__item .catalog-preview__actions .catalog-preview__buy:hover {
+    background-color: #5fbb2d;
+  }
+  &__item .catalog-preview__actions .catalog-preview__buy:active {
+    background-color: #518534;
+    border: 3px solid #518534;
+  }
+  &__item .catalog-preview__actions .catalog-preview__bookmark {
+    color: @secondary-color;
+    background: white;
+    border-bottom-color: #63a63e;
+  }
+  &__item .catalog-preview__actions .catalog-preview__bookmark:hover {
+    border-color: @secondary-color;
+  }
+  &__item .catalog-preview__actions .catalog-preview__bookmark:active {
+    border-color: #c1c6ce;
+  }
+  &__image {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    width: 218px;
+    height: 130px;
+  }
+  &__image img {
+    max-width: 100%;
+  }
+  &__item-title {
+    font-size: 18px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    min-height: 40px;
+    padding: 0 25px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  &__discount {
+    font-family: "PT Sans", sans-serif;
+    min-height: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #999;
+    text-decoration: line-through;
+  }
+  &__price {
+    font-family: "PT Sans", sans-serif;
+    position: relative;
+    width: 80px;
+    margin: 0 auto;
+    margin-left: 43px;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    color: white;
+    background: @accent-color;
+    border-radius: 3px;
+  }
+  &__price:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 0;
+    height: 0;
+    border: 20px solid white;
+    border-left-color: @accent-color;
+  }
+}

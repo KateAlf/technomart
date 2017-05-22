@@ -1,0 +1,26 @@
+.breadcrumbs {
+  display: block;
+  margin-top: 25px;
+  list-style: none;
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  &__item {
+    display: inline-block;
+    position: relative;
+    margin-right: 40px;
+  }
+  &__item:before {
+    content: ">";
+    display: block;
+    position: absolute;
+    top: 0;
+    font-size: 15px;
+    left: -20px;
+    color: #c1c6ce;
+  }
+  &__item:first-child:before {
+    content: " ";
+    display: none;
+  }
+}

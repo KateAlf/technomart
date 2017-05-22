@@ -1,0 +1,30 @@
+.brand {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
+  &__item {
+    position: relative;
+    border: 1px solid #e5e5e5;
+    min-height: 145px;
+    width: 218px;
+    margin-top: 20px;
+    padding: 0;
+  }
+  &__item:hover {
+    box-shadow: 0 5px 25px 0px rgba(41, 52, 73, 0.5);
+  }
+  &__item:active {
+    opacity: 0.5;
+    box-shadow: 0 4px 10px 0px rgba(41, 52, 73, 0.5);
+  }
+  &__img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+  }
+}

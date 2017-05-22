@@ -1,0 +1,82 @@
+.features-item {
+  width: 260px;
+  min-height: 83px;
+  color: #fff;
+  padding: 20px;
+  font-size: 24px;
+  position: relative;
+  &__text {
+    float: left;
+    width: 140px;
+    padding: 0px;
+    margin: 0px;
+  }
+  &--text span {
+    display: block;
+    margin-bottom: 15px;
+  }
+  &__img {
+    float: right;
+    vertical-align: middle;
+  }
+  &--yellow:after {
+    content: " ";
+    display: block;
+    width: 60px;
+    height: 59px;
+    position: absolute;
+    background: url("../img/new.png") no-repeat 0 0;
+    top: 0px;
+    right: 0px;
+    z-index: 100;
+  }
+  &--yellow {
+    background: #f6b22d;
+    float: left;
+    margin-right: 20px;
+    position: relative;
+  }
+  &--blue {
+    background: #4aafde;
+    float: left;
+    margin-right: 20px;
+  }
+  &--purple {
+    background: #cc79d1;
+    float: right;
+    margin-right: 0px;
+  }
+  &--green {
+    background: #85d179;
+    float: right;
+    margin-right: 0px;
+    height: 83px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  &--orange {
+    background: #f6b22d;
+    float: right;
+    margin-right: 0px;
+  }
+  &__button {
+    display: block;
+    width: 135px;
+    height: 38px;
+    background: rgba(0, 0, 0, 0.1);
+    font-weight: 400;
+    line-height: 38px;
+    text-align: center;
+    border-radius: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  &__button:hover {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  &__button:click {
+    background: rgba(0, 0, 0, 0.3);
+  }
+}

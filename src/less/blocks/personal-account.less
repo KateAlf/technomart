@@ -1,0 +1,94 @@
+.personal-account {
+  display: block;
+  float: right;
+  width: 280px;
+  min-height: 60px;
+  &__login {
+    position: relative;
+    float: left;
+    width: 91px;
+    background-color: #fff;
+    padding: 11px 15px 13px 6px;
+  }
+  &__login:hover .icon--login {
+    fill-opacity: 1;
+  }
+  &__login:hover .personal-account__text--login {
+    color: @accent-color;
+  }
+  &__login:active .personal-account__text--login {
+    color: #c5c5c5;
+    color: rgba(0, 0, 0, 0.3);
+  }
+  &__login:active .icon--login {
+    fill-opacity: 0.3;
+  }
+  &__text {
+    font-size: 21px;
+    color: #000000;
+    line-height: 18px;
+    text-decoration: none;
+    &--login {
+      padding-left: 40px;
+    }
+    &--register {
+      padding: 0px;
+      margin: 0px;
+    }
+    &--logged-in {
+      line-height: 45px;
+      padding-left: 45px;
+      margin-bottom: 10px;
+      margin-top: 0;
+    }
+  }
+  &__register {
+    float: right;
+    width: 110px;
+    min-height: 45;
+    background-color: #fff;
+    padding: 13px 25px;
+  }
+  &__register:hover .personal-account__text--register {
+    color: #ee3643;
+  }
+  &__register:active .personal-account__text--register {
+    color: #c5c5c5;
+    color: rgba(0, 0, 0, 0.3);
+  }
+  &__logged-in {
+    position: relative;
+    width: 280px;
+    display: block;
+    line-height: 45px;
+    background-color: #fff;
+  }
+  &__links {
+    padding-left: 18px;
+    position: relative;
+  }
+  &__links:after {
+    content: " ";
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: @secondary-color;
+    border-radius: 50%;
+    position: absolute;
+    top: 7px;
+    left: 107px;
+  }
+  &__link-text {
+    font-size: 16px;
+    color: @secondary-color;
+    line-height: 18px;
+    margin-right: 30px;
+    &:hover {
+      color: @accent-color;
+    }
+    &:active {
+      color: @secondary-color;
+      opacity: 0.3;
+    }
+  }
+}

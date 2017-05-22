@@ -1,0 +1,105 @@
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  fill: white;
+  &--vk,
+  &--facebook,
+  &--instagram {
+    vertical-align: middle;
+  }
+  &--search {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    left: 18px;
+    fill-opacity: 0.3;
+    z-index: 9999;
+  }
+  &--bookmark {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    left: 18px;
+    width: 13px;
+    height: 17px;
+    fill-opacity: 0.3;
+  }
+  &--cart {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    left: 10px;
+    width: 18px;
+    height: 21px;
+    fill-opacity: 0.3;
+  }
+  &--login {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    left: 15px;
+    fill: #32425c;
+    fill-opacity: 0.3;
+  }
+  &--user {
+    display: block;
+    fill: @secondary-color;
+    fill-opacity: 0.3;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+  }
+  &--exit {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    right: 10px;
+    fill: @secondary-color;
+    fill-opacity: 0.3;
+  }
+  &--exit:hover,
+  &--user:hover {
+    fill-opacity: 1;
+  }
+  &--exit:active,
+  &--user:active {
+    fill-opacity: 0.3;
+  }
+  &--phone {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 17px;
+    fill: #bfc6ce;
+  }
+  &--home {
+    display: block;
+    fill: #c1c6ce;
+    width: 15px;
+    height: 12px;
+    margin-right: 15px;
+  }
+  &--arrow {
+    fill: #c6c2bd;
+    width: 12px;
+  }
+  &--arrow-up {
+    fill: @accent-color;
+    margin-right: 23px;
+  }
+  &--arrow:active {
+    fill: @accent-color;
+    text-decoration: none;
+  }
+  &--arrow:hover {
+    fill: #000;
+    text-decoration: none;
+  }
+}

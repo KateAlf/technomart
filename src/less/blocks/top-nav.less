@@ -1,0 +1,40 @@
+.top-nav {
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: @secondary-color;
+    border-bottom: 5px solid @primary-color;
+    padding: 0 50px 0 50px;
+  }
+  &__item {
+    &:last-child {
+      margin-right: 0px;
+    }
+    &__item:hover {}
+  }
+  &__link {
+    display: block;
+    padding-right: 30px;
+    padding-left: 30px;
+    min-height: 55px;
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      color: darken(#fff, 15%);
+      background-color: @primary-color;
+    }
+    &:hover .top-nav__item {
+      background-color: @primary-color;
+    }
+    &:active {
+      opacity: 0.5;
+      background-color: @primary-color;
+    }
+  }
+}
